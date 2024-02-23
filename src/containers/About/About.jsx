@@ -2,9 +2,9 @@ import React from "react";
 import { BsInfoCircleFill } from "react-icons/bs";
 import PageHeaderContent from "../../components/PageHeaderContent/PageHeader.jsx";
 import { Animate } from "react-simple-animate";
-import "./style.css";
 import { DiApple, DiAndroid } from "react-icons/di";
 import { FaDev, FaDatabase } from "react-icons/fa";
+import "./style.css";
 const personalDetails = [
   {
     label: "Name",
