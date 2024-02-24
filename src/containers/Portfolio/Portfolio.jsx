@@ -1,41 +1,41 @@
 import React, { useState } from "react";
 import { BsInfoCircleFill } from "react-icons/bs";
 import PageHeaderContent from "../../components/PageHeaderContent/PageHeader.jsx";
-import ImageOne from "../../images/image1.avif";
-import ImageTwo from "../../images/image2.jpg";
-import ImageThree from "../../images/image3.jpg";
-import ImageFour from "../../images/image4.jpg";
-import ImageFive from "../../images/image5.jpg";
+import ImageOne from "../../images/IMG1.avif";
+import ImageTwo from "../../images/IMG2.jpg";
+import ImageThree from "../../images/IMG3.webp";
+import ImageFour from "../../images/IMG 4.jpeg";
+import ImageFive from "../../images/IMG5.webp";
 import "./style.css";
 
 const portfolioData = [
   {
     id: 2,
-    name: "Ecommerce",
+    name: "Shoes Website",
     image: ImageOne,
-    link: "",
+    link: "https://github.com/LidyaEjigu/Shoes_Website",
   },
   {
     id: 3,
-    name: "hotes APP",
+    name: " Furniture Website",
     image: ImageTwo,
     link: "",
   },
   {
     id: 2,
-    name: "supplier desigh",
+    name: "Portfolio",
     image: ImageThree,
     link: "",
   },
   {
     id: 2,
-    name: "supplier ",
+    name: "Crud APP ",
     image: ImageFour,
     link: "",
   },
   {
     id: 3,
-    name: "design",
+    name: "Compliant App",
     image: ImageFive,
     link: "",
   },

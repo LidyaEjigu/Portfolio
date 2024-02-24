@@ -16,10 +16,10 @@ const data = [
     lable: "SKILLS",
     to: "/Skills",
   },
-  {
-    lable: "RESUME",
-    to: "/Resume",
-  },
+  // {
+  //   lable: "RESUME",
+  //   to: "/Resume",
+  // },
   {
     lable: "PORTFOLIO",
     to: "/Portfolio",

@@ -46,11 +46,11 @@ const About = () => {
           >
             <h3>Fullstack Developer</h3>
             <div className="paragraph">
-              <p> jehdjkhdqjkhdsjdhkqjhskj gjjjjjjjjjjj jjjjjjjjjjjj</p>
-              <p>jdjjhfjhfjdejwshe jwhhhhhhhh hhhhhhhhhh hhhhhhhhhhhhhh</p>
-              <p>jdjjhfjhfjdejwshej whhhhhhhhhhhh hhhhhhh hhhhhhhhhhhhh</p>
-              <p>jdjjhfjhfjdejwshej whhhhhhhh hhhhhhhhhh hhhhhhhhhhhhhh</p>
-              <p>jdjjhfjhfjdejwshej whhhhhhhh hhhhhh hhhhhhhhhhhhhhhhhh</p>
+              <p>I am a passionate full-stack developer in front-end and back-end</p>
+              <p> technologies. Skilled in JavaScript, React, Node.js, and more, I love </p>
+              <p>creating user-friendly applications and efficient solutions. With a</p>
+              <p>collaborative mindset and a thirst for learning, I enjoy tackling new</p>
+              <p>challenges and contributing to innovative projects that make a difference</p>
             </div>
           </Animate>
 
