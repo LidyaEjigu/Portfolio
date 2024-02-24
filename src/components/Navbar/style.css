@@ -50,6 +50,7 @@
   display: none;
 }
 @media only screen and (max-width: 768px) {
+  
   .navbar_container_menu {
     display: flex;
     flex-direction: column;
@@ -71,7 +72,7 @@
   .navbar_container_menu_item{
     border-bottom: 1px solid #282828;
     margin: 0px;
-    padding: 15px 0px;
+    padding: 20px 0px;
 
   }
   .nav-icon {

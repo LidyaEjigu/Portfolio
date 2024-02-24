@@ -29,17 +29,19 @@ h1 {
     display: flex;
     justify-content: center;
     margin-top: 15px;
+    button{
+      cursor: pointer;
+      padding: 10px 70px;
+      font-size: 2rem;
+      background: transparent;
+      color: var(--yellow-theme-main-color);
+      
+      border-radius: 4px;
+      font-weight: 500;  
+  }
     
 }
-button{
-    cursor: pointer;
-    padding: 10px 70px;
-    font-size: 2rem;
-    background: transparent;
-    color: var(--yellow-theme-main-color);
-    border-radius: 4px;
-    font-weight: 500;  
-}
+
 button:hover{
   background: var(--yellow-theme-main-color);
   color: #000000;
