@@ -8,6 +8,7 @@ import ImageFour from "../../images/IMG 4.jpeg";
 import ImageFive from "../../images/IMG5.webp";
 import "./style.css";
 
+
 const portfolioData = [
   {
     id: 2,
@@ -54,6 +55,7 @@ const filterData = [
     lable: "Design",
   },
 ];
+
 
 const Portfolio = () => {
   const [filteredvalue, setFilterdvalue] = useState(1);
