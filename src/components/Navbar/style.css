@@ -61,19 +61,36 @@
     left: -110%;
     opacity: 1;
     transition: all 0.5s ease;
+   
+
+   
 
     &.active{
       background: #181818;
       left: 0px;
       opacity: 1;
+     
+     
+      
+      
+   
+      
+   
+     
     }
    
   }
+  
   .navbar_container_menu_item{
     border-bottom: 1px solid #282828;
     margin: 0px;
-    padding: 20px 0px;
-
+    padding: 20px 10px;
+    position: relative;
+    z-index: 2;
+  }
+  .navbar{
+    position: relative;
+    z-index: 1;
   }
   .nav-icon {
     display: block;

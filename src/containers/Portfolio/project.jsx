@@ -8,7 +8,6 @@ import ImageFour from "../../images/IMG 4.jpeg";
 import ImageFive from "../../images/IMG5.webp";
 import "./style.css";
 
-
 const portfolioData = [
   {
     id: 2,
@@ -18,64 +17,67 @@ const portfolioData = [
   },
   {
     id: 3,
-    name: " Furniture Website",
+    name: "Furniture Website",
     image: ImageTwo,
-    link: "",
+    link: "https://github.com/LidyaEjigu/Furniture_Website",
   },
   {
     id: 2,
     name: "Portfolio",
     image: ImageThree,
-    link: "",
+    link: "https://github.com/LidyaEjigu/Portifolio",
   },
   {
     id: 2,
-    name: "Crud APP ",
+    name: "Crud APP",
     image: ImageFour,
-    link: "",
+    link: "https://github.com/LidyaEjigu/MERN-CRUD",
   },
   {
     id: 3,
     name: "Compliant App",
     image: ImageFive,
-    link: "",
+    link: "https://github.com/LidyaEjigu/Complaint-App",
   },
 ];
+
 const filterData = [
   {
     filterId: 1,
-    lable: "ALL",
+    label: "ALL",
   },
   {
     filterId: 2,
-    lable: "Development",
+    label: "Development",
   },
   {
     filterId: 3,
-    lable: "Design",
+    label: "Design",
   },
 ];
 
-
 const Portfolio = () => {
-  const [filteredvalue, setFilterdvalue] = useState(1);
-  const [hoveredvalue, sethoveredvalue] = useState(null);
+  const [filteredValue, setFilteredValue] = useState(1);
+  const [hoveredValue, setHoveredValue] = useState(null);
 
   function handleFilter(currentId) {
-    setFilterdvalue(currentId);
+    setFilteredValue(currentId);
   }
+
   function handleHover(index) {
-    sethoveredvalue(index);
+    setHoveredValue(index);
   }
-  console.log("=================");
-  console.log(hoveredvalue);
-  console.log("=================");
+
+  function handleClick(link) {
+    if (link) {
+      window.open(link, '_blank');
+    }
+  }
 
   const filteredItems =
-    filteredvalue === 1
+    filteredValue === 1
       ? portfolioData
-      : portfolioData.filter((item) => item.id === filteredvalue);
-  console.log(filteredItems);
+      : portfolioData.filter((item) => item.id === filteredValue);
 
   return (
     <section id="Project" className="Project">
@@ -87,21 +89,21 @@ const Portfolio = () => {
         <ul className="Portfolio_content_filter">
           {filterData.map((item) => (
             <li
-              className={item.filterId === filteredvalue ? "active" : ""}
+              className={item.filterId === filteredValue ? "active" : ""}
               onClick={() => handleFilter(item.filterId)}
               key={item.filterId}
             >
-              {item.lable}
+              {item.label}
             </li>
           ))}
         </ul>
         <div className="Portfolio_content_cards">
-          {filteredItems.map((item,index) => (
+          {filteredItems.map((item, index) => (
             <div
               className="Portfolio_content_cards_item"
               key={`cardItems${item.name.trim()}`}
-              onMouseEnter={()=>handleHover(index)}
-              onMouseLeave={()=>handleHover(null)}
+              onMouseEnter={() => handleHover(index)}
+              onMouseLeave={() => handleHover(null)}
             >
               <div className="Portfolio_content_cards_item_img-wrapper">
                 <a>
@@ -109,17 +111,13 @@ const Portfolio = () => {
                 </a>
               </div>
               <div className="overlay">
-                {
-                  index === hoveredvalue &&(
-                    <div>
-                      <p>{item.name}</p>
-                      <button>visit</button>
-                    </div>
-                  )
-                }
-
+                {index === hoveredValue && (
+                  <div>
+                    <p>{item.name}</p>
+                    <button onClick={() => handleClick(item.link)}>Visit</button>
+                  </div>
+                )}
               </div>
-
             </div>
           ))}
         </div>
